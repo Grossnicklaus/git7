@@ -91,7 +91,7 @@ def on_right_click(event):
 
 def create_shortcut():
     desktop = os.path.join(os.path.expanduser("~"), "Desktop")
-    path = os.path.join(desktop, "Large Folder Finder.lnk")
+    path = os.path.join(desktop, "STS Storage Helper.lnk")
 
     if getattr(sys, 'frozen', False):
         working_directory = sys._MEIPASS
@@ -109,7 +109,7 @@ def create_shortcut():
     shortcut.TargetPath = sys.executable
     shortcut.WorkingDirectory = working_directory
     shortcut.IconLocation = icon_path
-    shortcut.Description = "Shortcut for Large Folder Finder Application"
+    shortcut.Description = "Shortcut for STS Storage Helper"
     shortcut.save()
 
     print(f"Shortcut created successfully at {path}")
